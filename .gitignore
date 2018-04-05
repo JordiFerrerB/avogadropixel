@@ -1,0 +1,5 @@
+# IDE stuff
+.idea
+
+# Tools and dev thingies
+node_modules

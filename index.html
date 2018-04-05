@@ -2,31 +2,47 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Avogadro in Pixels</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
- <header>
- 	<h1>This page<br>will ask you<br>to use your<br>imagination</h1>
- 	<a href="#" class="continueButton headB">Understood</a>
- </header>
+<header class="main-header">
+	<h1>This page will ask you to use your imagination</h1>
+	<button type="button" class="continue-button">Understood</button>
+</header>
 
- <section id="squareContainer">
- 	<div class ="firstText">
- 	  <p>This square contains a thousand pixels. It's easy to imagine a thousand pixels.</p>
- 	  <a href="#" class="continueButton grow1m">Ok.</a>
- 	</div>
- 	<div class="square firstSquare"></div>
- </section>
+<section class="hidden">
+	<p>This square contains a thousand pixels. It's easy to imagine a thousand pixels.</p>
+	<button type="button" class="continue-button second-button">Ok</button>
+</section>
 
- <section id="secondStage">
- 	<p>Now we have a million pixels. That is still easy to imagine, megapixels have been around for ages now.</p>
- 	<a href="#" class="continueButton">Ok.</a>
- </section>
-  
- <!-Jquery ->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script type="text/javascript" src="js/main.js"></script>
+<div class="hidden" id="square"></div>
+
+<section class="hidden second-section">
+	<p>Now we have a million pixels. That is still easy to imagine, megapixels have been around for ages now.</p>
+	<p>Can you imagine this shape a million times larger?</p>
+	<p>That is 10<sup>12</sup> pixels.</p>
+	<p>Is that still easy?</p>
+	<p>Can you imagine the <strong>Avogadro</strong> constant of pixels?</p>
+	<p>That would be 6.022×10<sup>23</sup> pixels!</p>
+	<button type="button" class="continue-button last-button">Continue</button>
+</section>
+
+<section class="hidden last-section">
+	<p>This rectangle contains an amount of pixels equivalent to the Avogadro constant.</p>
+	<p>18 grams of water also contain the Avogadro constant of water molecules. This is called a mole.</p>
+	<p>Is that easy to imagine?</p>
+	<p>Now look at yourself.</p>
+	<p>All your blood and cell tissues, they contain thousands of moles of water.</p>
+	<p>All the proteins, fat, carbohydrates that your body is made of contain moles and moles and moles of carbon.</p>
+	<p>Can you imagine that?</p>
+	<p>Can you imagine yourself?</p>
+</section>
+
+<!-Jquery ->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
